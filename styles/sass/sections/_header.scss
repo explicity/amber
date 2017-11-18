@@ -39,6 +39,16 @@ body {
             cursor: pointer;
         }
     }
+    
+
+    &-bottom {
+        height: 72px;
+    }
+}
+
+.bg-grey {
+    background-color: $color-black;
+    opacity: 0.4;
 }
 
 .icon {
@@ -87,5 +97,53 @@ body {
             font-family: $font-input;
             font-weight: $font-normal;
         }
+    }
+}
+
+.nav {
+
+    &-item {
+        width: 99px;
+        height: 72px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+    }
+
+    &-link {
+        font-size: 12px; 
+        text-transform: uppercase;
+        color: $color-white;
+    }
+}
+
+.border {
+
+    &-yellow {
+        @include border-top($color-home);
+    }
+
+    &-orange {
+        @include border-top($color-typography);
+    }
+
+    &-pink {
+        @include border-top($color-blog);
+    }
+
+    &-purple {
+        @include border-top($color-pages);
+    }
+
+    &-violet {
+        @include border-top($color-elements);        
+    }
+
+    &-blue {
+        @include border-top($color-ecommerse);
+    }
+
+    &-aqua {
+        @include border-top($color-menu);     
     }
 }

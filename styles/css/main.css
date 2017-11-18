@@ -105,8 +105,18 @@ body {
   background: url("../../img/search.png") no-repeat center center;
   cursor: pointer;
 }
+/* line 44, ../sass/sections/_header.scss */
+.header-bottom {
+  height: 72px;
+}
 
-/* line 46, ../sass/sections/_header.scss */
+/* line 49, ../sass/sections/_header.scss */
+.bg-grey {
+  background-color: #000000;
+  opacity: 0.4;
+}
+
+/* line 56, ../sass/sections/_header.scss */
 .icon-login:before {
   content: '';
   background: url(../../img/login.png) no-repeat center center;
@@ -117,7 +127,7 @@ body {
   left: 0;
   top: 0;
 }
-/* line 57, ../sass/sections/_header.scss */
+/* line 67, ../sass/sections/_header.scss */
 .icon-register:before {
   content: '';
   background: url(../../img/regist.png) no-repeat center center;
@@ -129,16 +139,16 @@ body {
   top: 0;
 }
 
-/* line 69, ../sass/sections/_header.scss */
+/* line 79, ../sass/sections/_header.scss */
 .navbar-nav {
   flex-direction: row;
 }
 
-/* line 75, ../sass/sections/_header.scss */
+/* line 85, ../sass/sections/_header.scss */
 .form-inline {
   flex-wrap: nowrap;
 }
-/* line 79, ../sass/sections/_header.scss */
+/* line 89, ../sass/sections/_header.scss */
 .form-control {
   border: 1px solid rgba(133, 147, 159, 0.5);
   background-color: transparent;
@@ -146,8 +156,52 @@ body {
   font-size: 12px;
   padding: 4px 20px 4px 10px;
 }
-/* line 86, ../sass/sections/_header.scss */
+/* line 96, ../sass/sections/_header.scss */
 .form-control:placeholder {
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+
+/* line 105, ../sass/sections/_header.scss */
+.nav-item {
+  width: 99px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 113, ../sass/sections/_header.scss */
+.nav-link {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* line 122, ../sass/sections/_header.scss */
+.border-yellow {
+  border-top: 10px solid #ffae00;
+}
+/* line 126, ../sass/sections/_header.scss */
+.border-orange {
+  border-top: 10px solid #fc7100;
+}
+/* line 130, ../sass/sections/_header.scss */
+.border-pink {
+  border-top: 10px solid #e51c5e;
+}
+/* line 134, ../sass/sections/_header.scss */
+.border-purple {
+  border-top: 10px solid #ae0f8d;
+}
+/* line 138, ../sass/sections/_header.scss */
+.border-violet {
+  border-top: 10px solid #6d0fae;
+}
+/* line 142, ../sass/sections/_header.scss */
+.border-blue {
+  border-top: 10px solid #33227a;
+}
+/* line 146, ../sass/sections/_header.scss */
+.border-aqua {
+  border-top: 10px solid #0c8fcc;
 }

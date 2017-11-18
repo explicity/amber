@@ -1,0 +1,153 @@
+/* line 5, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/sections/_header.scss */
+body {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/* line 7, ../sass/sections/_header.scss */
+.container {
+  max-width: 960px;
+}
+
+/* line 11, ../sass/sections/_header.scss */
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+/* line 17, ../sass/sections/_header.scss */
+.header-top {
+  color: #85939f;
+  height: 48px;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.15);
+}
+/* line 22, ../sass/sections/_header.scss */
+.header-top-link {
+  position: relative;
+  color: #85939f;
+  padding-left: 20px;
+  font-size: 11px;
+  line-height: 35px;
+  margin-left: 35px;
+}
+/* line 32, ../sass/sections/_header.scss */
+.header-top .btn {
+  background-color: transparent;
+  padding: 0;
+  margin-left: -18px;
+  width: 14px;
+  height: 13px;
+  background: url("../../img/search.png") no-repeat center center;
+  cursor: pointer;
+}
+
+/* line 46, ../sass/sections/_header.scss */
+.icon-login:before {
+  content: '';
+  background: url(../../img/login.png) no-repeat center center;
+  display: block;
+  width: 14px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 57, ../sass/sections/_header.scss */
+.icon-register:before {
+  content: '';
+  background: url(../../img/regist.png) no-repeat center center;
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 69, ../sass/sections/_header.scss */
+.navbar-nav {
+  flex-direction: row;
+}
+
+/* line 75, ../sass/sections/_header.scss */
+.form-inline {
+  flex-wrap: nowrap;
+}
+/* line 79, ../sass/sections/_header.scss */
+.form-control {
+  border: 1px solid rgba(133, 147, 159, 0.5);
+  background-color: transparent;
+  border-radius: 0;
+  font-size: 12px;
+  padding: 4px 20px 4px 10px;
+}
+/* line 86, ../sass/sections/_header.scss */
+.form-control:placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}

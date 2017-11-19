@@ -293,3 +293,35 @@ html, body {
   background-color: #02baab;
   border-color: #02baab;
 }
+
+/* line 1, ../sass/sections/_info-section.scss */
+.info-section {
+  padding: 100px 0;
+  color: #3b4954;
+}
+/* line 5, ../sass/sections/_info-section.scss */
+.info-section .container {
+  max-width: 766px;
+}
+
+/* line 12, ../sass/sections/_info-section.scss */
+.header-section {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+/* line 16, ../sass/sections/_info-section.scss */
+.header-section:after {
+  border-bottom-color: #eeeeee;
+  padding-top: 30px;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  border-bottom-style: inset;
+  border-bottom-width: 5px;
+}
+/* line 21, ../sass/sections/_info-section.scss */
+.header-content {
+  line-height: 30px;
+  margin-bottom: 40px;
+}

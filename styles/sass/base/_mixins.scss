@@ -1,3 +1,14 @@
 @mixin border-top ($color) {
     border-top: 10px solid $color;
 }
+
+@mixin separator ($color) {
+    border-bottom-color: $color;
+    padding-top: 30px;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    border-bottom-style: inset;    
+    border-bottom-width: 5px;
+}

@@ -1,0 +1,25 @@
+.info-section {
+    padding: 100px 0;
+    color: $color-dark;
+
+    & .container {
+        max-width: 766px;
+    }
+}
+
+.header {
+
+    &-section {
+        font-size: 36px;
+        margin-bottom: 50px;
+
+        &:after {
+            @include separator ($color-separator);
+        }
+    }
+
+    &-content {
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+}

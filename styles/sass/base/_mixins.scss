@@ -12,3 +12,14 @@
     border-bottom-style: inset;    
     border-bottom-width: 5px;
 }
+
+@mixin pseudo($img, $width, $height) {
+    content: '';
+    background: url($img) no-repeat center center;
+    display: block;
+    width: $width;
+    height: $height;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

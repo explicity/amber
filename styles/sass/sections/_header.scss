@@ -64,25 +64,11 @@ html, body {
 .icon {
 
     &-login:before {
-        content: '';
-        background: url(../../img/login.png) no-repeat center center;
-        display: block;
-        width: 14px;
-        height: 13px;
-        position: absolute;
-        left: 0;
-        top: 0;
+        @include pseudo ('../../img/login.png', 14px, 13px);
     }
 
     &-register:before {
-        content: '';
-        background: url(../../img/regist.png) no-repeat center center;
-        display: block;
-        width: 13px;
-        height: 13px;
-        position: absolute;
-        left: 0;
-        top: 0;
+        @include pseudo ('../../img/regist.png', 14px, 13px);
     }
 }
 
@@ -99,7 +85,7 @@ html, body {
     &-control {
         border: 1px solid rgba(133, 147, 159, 0.5);
         background-color: transparent;
-        border-radius: 0;
+        border-radius: 0; 
         font-size: 12px;
         padding: 4px 20px 4px 10px;
 

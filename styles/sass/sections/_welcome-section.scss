@@ -1,0 +1,70 @@
+.welcome-section {
+    position: relative;
+    margin-top: 122px; 
+
+    &-img {
+        height: calc(100vh - 122px);
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
+
+.main {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .container {
+        max-width: 628px;
+    }
+
+    &-heading {
+        font-size: 5vmax;
+        color: $color-white;        
+
+        &:first-child {
+            color: $color-secondary;
+            margin-bottom: 15px;   
+        }
+    }
+
+    &-header {
+        margin-bottom: 80px;        
+    }
+
+    & .btn {
+        margin: 15px;
+    }
+
+}
+
+.btn {
+    padding: 0;
+
+    &-primary {
+        color: $color-secondary;
+        background-color: transparent;
+        border-color: $color-secondary;
+    }
+
+    &-lg {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: $font-bold;
+        letter-spacing: 0.9px;
+        line-height: 35px;
+        border-radius: 0;
+        border-width: 2px;
+        width: 140px;
+        height: 40px;
+        padding: 0;
+    }
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+    }
+}

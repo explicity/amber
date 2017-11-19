@@ -1,0 +1,30 @@
+.blockquote {
+    position: relative;
+
+    &-main {
+        color: $color-white;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &-author {
+        color: $color-secondary;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+    }
+
+    &-img {
+        height: 450px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    & .carousel-indicators li {
+        border-radius: 50%;
+        width: 8px;
+        height: 7px;
+        margin-bottom: 50px;
+    }
+}

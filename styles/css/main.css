@@ -294,6 +294,11 @@ html, body {
   border-color: #02baab;
 }
 
+/* line 72, ../sass/sections/_welcome-section.scss */
+.carousel-indicators .active {
+  background-color: #02baab;
+}
+
 /* line 1, ../sass/sections/_info-section.scss */
 .info-section {
   padding: 100px 0;
@@ -491,4 +496,36 @@ html, body {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+/* line 1, ../sass/sections/_blockquote.scss */
+.blockquote {
+  position: relative;
+}
+/* line 4, ../sass/sections/_blockquote.scss */
+.blockquote-main {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* line 10, ../sass/sections/_blockquote.scss */
+.blockquote-author {
+  color: #02baab;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 18, ../sass/sections/_blockquote.scss */
+.blockquote-img {
+  height: 450px;
+  overflow: hidden;
+  object-fit: cover;
+}
+/* line 24, ../sass/sections/_blockquote.scss */
+.blockquote .carousel-indicators li {
+  border-radius: 50%;
+  width: 8px;
+  height: 7px;
+  margin-bottom: 50px;
 }

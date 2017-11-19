@@ -68,3 +68,7 @@
         border-color: $color-secondary;
     }
 }
+
+.carousel-indicators .active {
+    background-color: $color-secondary;
+}

@@ -3,8 +3,15 @@
 
     &-main {
         color: $color-white;
+        line-height: 30px;
         font-size: 24px;
         margin-bottom: 20px;
+        padding-top: 80px; 
+
+        @media (max-width: 765px) {
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
 
     &-author {
@@ -19,12 +26,34 @@
         height: 450px;
         overflow: hidden;
         object-fit: cover;
+
+        @media (max-width: 765px) {
+            height: calc(100vh - 122px);
+        }
     }
 
-    & .carousel-indicators li {
-        border-radius: 50%;
-        width: 8px;
-        height: 7px;
+    & .carousel-indicators {
         margin-bottom: 50px;
+
+        li {
+            border-radius: 50%;
+            width: 8px;
+            height: 7px;
+        }
+    }
+}
+ 
+.icon {
+
+    &-quotes:before {
+        content: '';
+        background: url('../../img/quotes.png') no-repeat center center;
+        display: block;
+        width: 44px;
+        height: 36px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0);
     }
 }

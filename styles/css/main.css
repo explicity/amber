@@ -232,8 +232,12 @@ html, body {
   overflow: hidden;
   object-fit: cover;
 }
+/* line 11, ../sass/sections/_welcome-section.scss */
+.welcome-section .carousel-indicators {
+  margin-bottom: 25px;
+}
 
-/* line 12, ../sass/sections/_welcome-section.scss */
+/* line 16, ../sass/sections/_welcome-section.scss */
 .main {
   position: absolute;
   z-index: 100;
@@ -241,40 +245,40 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 19, ../sass/sections/_welcome-section.scss */
+/* line 23, ../sass/sections/_welcome-section.scss */
 .main .container {
   max-width: 628px;
 }
-/* line 23, ../sass/sections/_welcome-section.scss */
+/* line 27, ../sass/sections/_welcome-section.scss */
 .main-heading {
   font-size: 5vmax;
   color: #fff;
 }
-/* line 27, ../sass/sections/_welcome-section.scss */
+/* line 31, ../sass/sections/_welcome-section.scss */
 .main-heading:first-child {
   color: #02baab;
   margin-bottom: 15px;
 }
-/* line 33, ../sass/sections/_welcome-section.scss */
+/* line 37, ../sass/sections/_welcome-section.scss */
 .main-header {
   margin-bottom: 80px;
 }
-/* line 37, ../sass/sections/_welcome-section.scss */
+/* line 41, ../sass/sections/_welcome-section.scss */
 .main .btn {
   margin: 15px;
 }
 
-/* line 43, ../sass/sections/_welcome-section.scss */
+/* line 47, ../sass/sections/_welcome-section.scss */
 .btn {
   padding: 0;
 }
-/* line 46, ../sass/sections/_welcome-section.scss */
+/* line 50, ../sass/sections/_welcome-section.scss */
 .btn-primary {
   color: #02baab;
   background-color: transparent;
   border-color: #02baab;
 }
-/* line 52, ../sass/sections/_welcome-section.scss */
+/* line 56, ../sass/sections/_welcome-section.scss */
 .btn-lg {
   text-transform: uppercase;
   font-size: 12px;
@@ -287,14 +291,14 @@ html, body {
   height: 40px;
   padding: 0;
 }
-/* line 65, ../sass/sections/_welcome-section.scss */
+/* line 69, ../sass/sections/_welcome-section.scss */
 .btn:hover {
   color: #fff;
   background-color: #02baab;
   border-color: #02baab;
 }
 
-/* line 72, ../sass/sections/_welcome-section.scss */
+/* line 76, ../sass/sections/_welcome-section.scss */
 .carousel-indicators .active {
   background-color: #02baab;
 }
@@ -505,10 +509,19 @@ html, body {
 /* line 4, ../sass/sections/_blockquote.scss */
 .blockquote-main {
   color: #fff;
+  line-height: 30px;
   font-size: 24px;
   margin-bottom: 20px;
+  padding-top: 80px;
 }
-/* line 10, ../sass/sections/_blockquote.scss */
+@media (max-width: 765px) {
+  /* line 4, ../sass/sections/_blockquote.scss */
+  .blockquote-main {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+/* line 17, ../sass/sections/_blockquote.scss */
 .blockquote-author {
   color: #02baab;
   font-family: "Lato", sans-serif;
@@ -516,16 +529,133 @@ html, body {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 18, ../sass/sections/_blockquote.scss */
+/* line 25, ../sass/sections/_blockquote.scss */
 .blockquote-img {
   height: 450px;
   overflow: hidden;
   object-fit: cover;
 }
-/* line 24, ../sass/sections/_blockquote.scss */
+@media (max-width: 765px) {
+  /* line 25, ../sass/sections/_blockquote.scss */
+  .blockquote-img {
+    height: calc(100vh - 122px);
+  }
+}
+/* line 35, ../sass/sections/_blockquote.scss */
+.blockquote .carousel-indicators {
+  margin-bottom: 50px;
+}
+/* line 38, ../sass/sections/_blockquote.scss */
 .blockquote .carousel-indicators li {
   border-radius: 50%;
   width: 8px;
   height: 7px;
-  margin-bottom: 50px;
+}
+
+/* line 48, ../sass/sections/_blockquote.scss */
+.icon-quotes:before {
+  content: '';
+  background: url("../../img/quotes.png") no-repeat center center;
+  display: block;
+  width: 44px;
+  height: 36px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+/* line 1, ../sass/sections/_blog-posts.scss */
+.blog-posts {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+@media (max-width: 991px) {
+  /* line 1, ../sass/sections/_blog-posts.scss */
+  .blog-posts {
+    text-align: center;
+  }
+}
+/* line 9, ../sass/sections/_blog-posts.scss */
+.blog-posts .container {
+  max-width: 960px;
+}
+/* line 14, ../sass/sections/_blog-posts.scss */
+.blog-posts-link {
+  color: #02baab;
+}
+/* line 17, ../sass/sections/_blog-posts.scss */
+.blog-posts-link:hover {
+  text-decoration: none;
+  color: #6d0fae;
+}
+/* line 23, ../sass/sections/_blog-posts.scss */
+.blog-posts-item {
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  /* line 23, ../sass/sections/_blog-posts.scss */
+  .blog-posts-item {
+    margin-bottom: 50px;
+  }
+}
+/* line 30, ../sass/sections/_blog-posts.scss */
+.blog-posts-item:after {
+  border-bottom-color: #c3c3c3;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 290px;
+  border-bottom-style: inset;
+  border-bottom-width: 1px;
+}
+/* line 40, ../sass/sections/_blog-posts.scss */
+.blog-posts-item h4 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+/* line 46, ../sass/sections/_blog-posts.scss */
+.blog-posts-item p {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+/* line 54, ../sass/sections/_blog-posts.scss */
+.blog-posts-img {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+/* line 59, ../sass/sections/_blog-posts.scss */
+.blog-posts .col-12 {
+  flex: 0 0 60%;
+}
+
+/* line 67, ../sass/sections/_blog-posts.scss */
+.icon-comment {
+  position: relative;
+  padding-left: 25px;
+  line-height: 14px !important;
+}
+/* line 72, ../sass/sections/_blog-posts.scss */
+.icon-comment:before {
+  content: '';
+  background: url("../../img/comment.png") no-repeat center center;
+  display: block;
+  width: 19px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 76, ../sass/sections/_blog-posts.scss */
+.icon-comment:hover:before {
+  content: '';
+  background: url("../../img/comment-hover.png") no-repeat center center;
+  display: block;
+  width: 19px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }

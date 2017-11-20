@@ -7,6 +7,10 @@
         overflow: hidden;
         object-fit: cover;
     }
+
+    & .carousel-indicators {
+        margin-bottom: 25px;
+    }
 }
 
 .main {

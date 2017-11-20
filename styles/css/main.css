@@ -659,3 +659,11 @@ html, body {
   left: 0;
   top: 0;
 }
+
+/* line 1, ../sass/sections/_experience.scss */
+.experience {
+  min-height: 100vh;
+  padding: 100px 0;
+  background-color: #02baab;
+  color: #fff;
+}

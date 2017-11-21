@@ -667,3 +667,127 @@ html, body {
   background-color: #02baab;
   color: #fff;
 }
+/* line 7, ../sass/sections/_experience.scss */
+.experience-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 12, ../sass/sections/_experience.scss */
+.experience-list-item .label {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+@media (max-width: 991px) {
+  /* line 7, ../sass/sections/_experience.scss */
+  .experience-list-item {
+    margin-bottom: 50px;
+  }
+}
+/* line 22, ../sass/sections/_experience.scss */
+.experience-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 31, ../sass/sections/_experience.scss */
+.pie-wrapper {
+  font-size: 210px;
+  height: 1em;
+  width: 1em;
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 41, ../sass/sections/_experience.scss */
+.pie-wrapper.progress-90 .left-side {
+  transform: rotate(330deg);
+}
+/* line 45, ../sass/sections/_experience.scss */
+.pie-wrapper.progress-90 .right-side {
+  transform: rotate(180deg);
+}
+/* line 52, ../sass/sections/_experience.scss */
+.pie-wrapper.progress-60 .left-side {
+  transform: rotate(216deg);
+}
+/* line 56, ../sass/sections/_experience.scss */
+.pie-wrapper.progress-60 .right-side {
+  transform: rotate(180deg);
+}
+/* line 63, ../sass/sections/_experience.scss */
+.pie-wrapper.progress-80 .left-side {
+  transform: rotate(300deg);
+}
+/* line 67, ../sass/sections/_experience.scss */
+.pie-wrapper.progress-80 .right-side {
+  transform: rotate(180deg);
+}
+/* line 72, ../sass/sections/_experience.scss */
+.pie-wrapper .pie {
+  height: 100%;
+  width: 100%;
+  clip: rect(auto, auto, auto, auto);
+  border: 5px solid #35c8bc;
+  border-radius: 50%;
+}
+/* line 79, ../sass/sections/_experience.scss */
+.pie-wrapper .pie .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  clip: rect(0, 0.5em, 1em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* line 92, ../sass/sections/_experience.scss */
+.icon {
+  position: relative;
+}
+/* line 97, ../sass/sections/_experience.scss */
+.icon-dots:before {
+  content: '';
+  background: url(../../img/dots.png) no-repeat center center;
+  display: block;
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  left: -80%;
+  top: 50%;
+  transform: translate(80%, -50%);
+}
+@media (max-width: 991px) {
+  /* line 97, ../sass/sections/_experience.scss */
+  .icon-dots:before {
+    display: none;
+  }
+}
+/* line 113, ../sass/sections/_experience.scss */
+.icon-dots:after {
+  content: '';
+  background: url(../../img/dots.png) no-repeat center center;
+  display: block;
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  left: 180%;
+  top: 50%;
+  transform: translate(-180%, -50%);
+}
+@media (max-width: 991px) {
+  /* line 113, ../sass/sections/_experience.scss */
+  .icon-dots:after {
+    display: none;
+  }
+}
+
+/* line 132, ../sass/sections/_experience.scss */
+.bg {
+  transform: rotate(-144deg);
+  border: 5px solid black;
+}

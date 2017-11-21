@@ -337,16 +337,15 @@ html, body {
 
 /* line 1, ../sass/sections/_last-works.scss */
 .last-works {
-  min-height: 100vh;
-  background: url(../../img/water.jpg) no-repeat center center;
+  background: url(../../img/bg.jpg) no-repeat center center;
   background-size: cover;
+  min-height: 740px;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-/* line 11, ../sass/sections/_last-works.scss */
+/* line 10, ../sass/sections/_last-works.scss */
 .last-works .container {
   max-width: 766px;
 }

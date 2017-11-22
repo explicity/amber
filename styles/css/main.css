@@ -344,10 +344,61 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px 0;
 }
-/* line 10, ../sass/sections/_last-works.scss */
+/* line 11, ../sass/sections/_last-works.scss */
 .last-works .container {
-  max-width: 766px;
+  max-width: 930px;
+}
+/* line 15, ../sass/sections/_last-works.scss */
+.last-works-img {
+  position: relative;
+}
+/* line 19, ../sass/sections/_last-works.scss */
+.last-works-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  /* line 19, ../sass/sections/_last-works.scss */
+  .last-works-item {
+    margin-bottom: 50px;
+  }
+}
+/* line 29, ../sass/sections/_last-works.scss */
+.last-works .figcaption {
+  position: absolute;
+  top: 80%;
+  width: 290px;
+  padding: 0 15px;
+}
+/* line 35, ../sass/sections/_last-works.scss */
+.last-works .figcaption h4 {
+  font-size: 14px;
+  margin-top: 2px;
+  margin-bottom: 7px;
+}
+/* line 41, ../sass/sections/_last-works.scss */
+.last-works .figcaption p {
+  font-size: 11px;
+  color: #02baab;
+}
+/* line 46, ../sass/sections/_last-works.scss */
+.last-works .figcaption .fa-heart {
+  margin-bottom: 5px;
+}
+
+/* line 52, ../sass/sections/_last-works.scss */
+.list-control {
+  color: #fff;
+  margin: 0 10px;
+}
+@media (max-width: 991px) {
+  /* line 52, ../sass/sections/_last-works.scss */
+  .list-control {
+    display: none;
+  }
 }
 
 /* line 1, ../sass/sections/_buy-now.scss */
@@ -568,6 +619,7 @@ html, body {
 .blog-posts {
   min-height: 100vh;
   padding: 100px 0;
+  color: #3b4954;
 }
 @media (max-width: 991px) {
   /* line 1, ../sass/sections/_blog-posts.scss */
@@ -575,30 +627,30 @@ html, body {
     text-align: center;
   }
 }
-/* line 9, ../sass/sections/_blog-posts.scss */
+/* line 10, ../sass/sections/_blog-posts.scss */
 .blog-posts .container {
   max-width: 960px;
 }
-/* line 14, ../sass/sections/_blog-posts.scss */
+/* line 15, ../sass/sections/_blog-posts.scss */
 .blog-posts-link {
   color: #02baab;
 }
-/* line 17, ../sass/sections/_blog-posts.scss */
+/* line 18, ../sass/sections/_blog-posts.scss */
 .blog-posts-link:hover {
   text-decoration: none;
   color: #6d0fae;
 }
-/* line 23, ../sass/sections/_blog-posts.scss */
+/* line 24, ../sass/sections/_blog-posts.scss */
 .blog-posts-item {
   font-size: 14px;
 }
 @media (max-width: 991px) {
-  /* line 23, ../sass/sections/_blog-posts.scss */
+  /* line 24, ../sass/sections/_blog-posts.scss */
   .blog-posts-item {
     margin-bottom: 50px;
   }
 }
-/* line 30, ../sass/sections/_blog-posts.scss */
+/* line 31, ../sass/sections/_blog-posts.scss */
 .blog-posts-item:after {
   border-bottom-color: #c3c3c3;
   content: '';
@@ -608,35 +660,35 @@ html, body {
   border-bottom-style: inset;
   border-bottom-width: 1px;
 }
-/* line 40, ../sass/sections/_blog-posts.scss */
+/* line 41, ../sass/sections/_blog-posts.scss */
 .blog-posts-item h4 {
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 15px;
 }
-/* line 46, ../sass/sections/_blog-posts.scss */
+/* line 47, ../sass/sections/_blog-posts.scss */
 .blog-posts-item p {
   color: #555;
   margin-bottom: 15px;
   line-height: 24px;
 }
-/* line 54, ../sass/sections/_blog-posts.scss */
+/* line 55, ../sass/sections/_blog-posts.scss */
 .blog-posts-img {
   display: block;
   margin: 0 auto 20px auto;
 }
-/* line 59, ../sass/sections/_blog-posts.scss */
+/* line 60, ../sass/sections/_blog-posts.scss */
 .blog-posts .col-12 {
   flex: 0 0 60%;
 }
 
-/* line 67, ../sass/sections/_blog-posts.scss */
+/* line 68, ../sass/sections/_blog-posts.scss */
 .icon-comment {
   position: relative;
   padding-left: 25px;
   line-height: 14px !important;
 }
-/* line 72, ../sass/sections/_blog-posts.scss */
+/* line 73, ../sass/sections/_blog-posts.scss */
 .icon-comment:before {
   content: '';
   background: url("../../img/comment.png") no-repeat center center;
@@ -647,7 +699,7 @@ html, body {
   left: 0;
   top: 0;
 }
-/* line 76, ../sass/sections/_blog-posts.scss */
+/* line 77, ../sass/sections/_blog-posts.scss */
 .icon-comment:hover:before {
   content: '';
   background: url("../../img/comment-hover.png") no-repeat center center;

@@ -6,9 +6,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
 
     & .container {
-        max-width: 766px;
+        max-width: 930px;
+    }
+
+    &-img {
+        position: relative;
+    }
+
+    &-item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    & .figcaption {
+        position: absolute;
+        top: 80%;
+        width: 290px;
+        padding: 0 15px;
+
+        h4 {
+            font-size: 14px;
+            margin-top: 2px;
+            margin-bottom: 7px;
+        }
+
+        p {
+            font-size: 11px;
+            color: $color-secondary;
+        }
+
+        & .fa-heart {
+            margin-bottom: 5px;
+        }
     }
 }
 
+.list-control {
+    color: $color-white;
+    margin: 0 10px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

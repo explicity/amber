@@ -1,17 +1,18 @@
 .footer {
     background-color: $bg-footer;
     color: $color-white;
-    padding: 70px 0 50px 0;
+    padding-bottom: 50px;
     font-size: 12px;
     line-height: 24px;
-
-    &-top {
-        margin-bottom: 50px;
-    }
 
     &-heading {
         font-size: 22px;
         margin-bottom: 50px;
+    }
+
+    &-item {
+        padding-top: 60px;
+        margin-bottom: 30px;
     }
 
     li {
@@ -42,7 +43,7 @@
             &-lg {
                 font-size: 8px;
 
-                @media (max-size: 424px) {
+                @media (max-width: 424px) {
                     font-size: 5px;
                 }
             }
@@ -50,6 +51,34 @@
             &-primary {
                 color: $color-white;
             }
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .border {
+  
+          &-violet {
+              @include border-top(15px, $color-elements);
+          } 
+
+          &-blue {
+            @include border-top(15px, $color-ecommerse);
+          } 
+    }
+    }
+
+    @media (min-width: 992px) {
+        
+        .border {
+            
+            &-pink {
+                @include border-top(15px, $color-blog);
+            } 
+    
+            &-orange {
+                @include border-top(15px, $color-typography);
+            } 
         }
     }
 }
@@ -122,3 +151,5 @@
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+
+

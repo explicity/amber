@@ -53,12 +53,63 @@ html, body {
             height: 13px;
             background: url('../../img/search.png') no-repeat center center;
             cursor: pointer;
+
+            &:hover {
+                background-color: transparent;
+                border-color: transparent;
+            }
         }
 
         & .navbar-nav {
             flex-direction: row;
         }
     }
+
+    @media (min-width: 992px) {
+        
+            .navbar {
+                padding: 0;
+            }
+        
+            .nav-item {
+                width: 99px;
+                height: 74px; 
+                display: flex;
+                align-items: center;
+                justify-content: center;      
+            }
+        
+            .border {
+                
+                    &-yellow {
+                        @include border-top(10px, $color-home);
+                    }
+                
+                    &-orange {
+                        @include border-top(10px, $color-typography);
+                    }
+                
+                    &-pink {
+                        @include border-top(10px, $color-blog);
+                    }
+                
+                    &-purple {
+                        @include border-top(10px, $color-pages);
+                    }
+                
+                    &-violet {
+                        @include border-top(10px, $color-elements);        
+                    }
+                
+                    &-blue {
+                        @include border-top(10px,$color-ecommerse);
+                    }
+                
+                    &-aqua {
+                        @include border-top(10px, $color-menu);     
+                    }
+                }
+        }
 }
 
 .navbar {
@@ -94,49 +145,6 @@ html, body {
     }
 }
 
-@media (min-width: 992px) {
 
-    .navbar {
-        padding: 0;
-    }
 
-    .nav-item {
-        width: 99px;
-        height: 74px; 
-        display: flex;
-        align-items: center;
-        justify-content: center;      
-    }
-
-    .border {
-        
-            &-yellow {
-                @include border-top($color-home);
-            }
-        
-            &-orange {
-                @include border-top($color-typography);
-            }
-        
-            &-pink {
-                @include border-top($color-blog);
-            }
-        
-            &-purple {
-                @include border-top($color-pages);
-            }
-        
-            &-violet {
-                @include border-top($color-elements);        
-            }
-        
-            &-blue {
-                @include border-top($color-ecommerse);
-            }
-        
-            &-aqua {
-                @include border-top($color-menu);     
-            }
-        }
-}
-
+ 

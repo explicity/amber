@@ -1,5 +1,5 @@
-@mixin border-top ($color) {
-    border-top: 10px solid $color;
+@mixin border-top ($width, $color) {
+    border-top: $width solid $color;
 }
 
 @mixin separator ($color) {

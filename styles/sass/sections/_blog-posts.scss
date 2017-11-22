@@ -63,19 +63,3 @@
 
 }
 
-.icon {
-
-    &-comment {
-        position: relative;
-        padding-left: 25px;
-        line-height: 14px !important;
-        
-        &:before {
-            @include pseudo ('../../img/comment.png', 19px, 14px);
-        }
-
-        &:hover:before {
-            @include pseudo ('../../img/comment-hover.png', 19px, 14px);
-        }
-   }
-}

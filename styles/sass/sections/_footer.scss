@@ -1,0 +1,124 @@
+.footer {
+    background-color: $bg-footer;
+    color: $color-white;
+    padding: 70px 0 50px 0;
+    font-size: 12px;
+    line-height: 24px;
+
+    &-top {
+        margin-bottom: 50px;
+    }
+
+    &-heading {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+
+    .list-item {
+        padding-left: 20px;
+        position: relative;
+
+        span {
+            position: relative;
+            top: -5px;
+        }
+
+        &-social {
+            padding-left: 65px;
+            position: relative;
+            line-height: 50px;
+        }
+    }
+
+    &-bottom {
+        font-size: 12px;
+
+        & .btn {
+
+            &-lg {
+                font-size: 8px;
+
+                @media (max-size: 424px) {
+                    font-size: 5px;
+                }
+            }
+
+            &-primary {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.color {
+
+    &-grey {
+        color: $footer-grey;
+    }
+
+    &-secondary {
+        color: $color-secondary;
+    }
+}
+
+
+@-webkit-keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  }
+  @keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  } 
+
+.hvr-icon-up {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    padding-right: 2.2em;
+  }
+
+.hvr-icon-up:before {
+    font-size: 12px;
+    content: "\f106";
+    position: absolute;
+    right: 10px;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+.hvr-icon-up:hover:before, .hvr-icon-up:focus:before, .hvr-icon-up:active:before {
+    -webkit-animation-name: hvr-icon-up;
+    animation-name: hvr-icon-up;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }

@@ -43,17 +43,3 @@
     }
 }
  
-.icon {
-
-    &-quotes:before {
-        content: '';
-        background: url('../../img/quotes.png') no-repeat center center;
-        display: block;
-        width: 44px;
-        height: 36px;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, 0);
-    }
-}

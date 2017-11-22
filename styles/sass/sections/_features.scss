@@ -30,22 +30,3 @@
         }
     }
 }
-
-.icon {
-    
-    &-star:before {
-        @include pseudo('../../img/star.png', 38px, 38px);
-    }
-
-    &-winner:before {
-        @include pseudo('../../img/winner.png', 35px, 32px);
-    }
-
-    &-stick:before {
-        @include pseudo('../../img/stick.png', 31px, 31px);
-    }
-
-    &-cloud:before {
-        @include pseudo('../../img/cloud.png', 40px, 25px);
-    }
-}

@@ -1,0 +1,126 @@
+.icon {
+    position: relative;
+
+        &-quotes:before {
+            content: '';
+            background: url('../../img/quotes.png') no-repeat center center;
+            display: block;
+            width: 44px;
+            height: 36px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);
+        }
+
+        &-comment {
+            position: relative;
+            padding-left: 25px;
+            line-height: 14px !important;
+            
+            &:before {
+                @include pseudo ('../../img/comment.png', 19px, 14px);
+            }
+    
+            &:hover:before {
+                @include pseudo ('../../img/comment-hover.png', 19px, 14px);
+            }
+       }
+
+       &-dots {
+        
+                &:before {
+                    content: '';
+                    background: url(../../img/dots.png) no-repeat center center;
+                    display: block;
+                    width: 70px;
+                    height: 10px;
+                    position: absolute;
+                    left: -80%;
+                    top: 50%;
+                    transform: translate(80%, -50%);
+                    @media (max-width: 991px) {
+                        display: none;
+                    }
+            
+                }
+        
+                &:after {
+                    content: '';
+                    background: url(../../img/dots.png) no-repeat center center;
+                    display: block;
+                    width: 70px;
+                    height: 10px;
+                    position: absolute;
+                    left: 180%;
+                    top: 50%;
+                    transform: translate(-180%, -50%);
+                    @media (max-width: 991px) {
+                        display: none;
+                    }
+            
+                }
+        }
+
+        &-star:before {
+            @include pseudo('../../img/star.png', 38px, 38px);
+        }
+        
+        &-winner:before {
+            @include pseudo('../../img/winner.png', 35px, 32px);
+        }
+        
+        &-stick:before {
+            @include pseudo('../../img/stick.png', 31px, 31px);
+        }
+        
+        &-cloud:before {
+            @include pseudo('../../img/cloud.png', 40px, 25px);
+        }
+
+
+        &-login:before {
+            @include pseudo ('../../img/login.png', 14px, 13px);
+        }
+        
+        &-register:before {
+            @include pseudo ('../../img/regist.png', 14px, 13px);
+        }
+
+        &-address:before {
+            @include pseudo ('../../img/address.png', 14px, 13px);
+        }
+
+        &-phone:before {
+            @include pseudo ('../../img/phone.png', 13px, 13px);
+        }
+
+        &-email:before {
+            @include pseudo ('../../img/email.png', 12px, 9px); 
+        }
+
+        &-tweet:before {
+            @include pseudo ('../../img/tweet.png', 14px, 13px);  
+        }
+
+        &-facebook:before {
+            @include pseudo ('../../img/facebook.png', 50px, 50px);
+        }
+
+        &-twitter:before {
+            @include pseudo ('../../img/twitter.png', 50px, 50px);
+        }
+
+        &-youtube:before {
+            @include pseudo ('../../img/youtube.png', 50px, 50px);
+        }
+
+        &-instagram:before {
+            @include pseudo ('../../img/instagram.png', 50px, 50px);
+        }
+
+        &-pinterest:before {
+            @include pseudo ('../../img/pinterest.png', 50px, 50px);
+        }
+}
+    

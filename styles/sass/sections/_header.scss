@@ -61,17 +61,6 @@ html, body {
     }
 }
 
-.icon {
-
-    &-login:before {
-        @include pseudo ('../../img/login.png', 14px, 13px);
-    }
-
-    &-register:before {
-        @include pseudo ('../../img/regist.png', 14px, 13px);
-    }
-}
-
 .navbar {
     padding: 12px;
 }

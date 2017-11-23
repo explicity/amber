@@ -326,75 +326,97 @@ html, body {
 .last-works .container {
   max-width: 930px;
 }
-/* line 16, ../sass/sections/_last-works.scss */
+/* line 15, ../sass/sections/_last-works.scss */
+.last-works-img {
+  transition: .3s ease-in-out;
+}
+/* line 19, ../sass/sections/_last-works.scss */
 .last-works-item {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 @media (max-width: 991px) {
-  /* line 16, ../sass/sections/_last-works.scss */
+  /* line 19, ../sass/sections/_last-works.scss */
   .last-works-item {
     margin-bottom: 50px;
   }
 }
-/* line 25, ../sass/sections/_last-works.scss */
+/* line 28, ../sass/sections/_last-works.scss */
 .last-works-item figure {
   position: relative;
-  width: 290px;
-  height: 290px;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  overflow: hidden;
 }
-/* line 35, ../sass/sections/_last-works.scss */
-.last-works-item figure::hover .links {
+/* line 33, ../sass/sections/_last-works.scss */
+.last-works-item figure:hover .figcaption {
+  opacity: 0;
+}
+/* line 37, ../sass/sections/_last-works.scss */
+.last-works-item figure:hover .links {
   opacity: 1;
-  z-index: 100;
 }
-/* line 43, ../sass/sections/_last-works.scss */
+/* line 41, ../sass/sections/_last-works.scss */
+.last-works-item figure:hover .last-works-img {
+  filter: blur(2px);
+}
+/* line 48, ../sass/sections/_last-works.scss */
 .last-works .figcaption {
   position: absolute;
   top: 80%;
   width: 290px;
   padding: 0 15px;
+  opacity: 1;
+  transition: all 0.5s;
 }
-/* line 49, ../sass/sections/_last-works.scss */
+/* line 56, ../sass/sections/_last-works.scss */
 .last-works .figcaption h4 {
   font-size: 14px;
   margin-top: 2px;
   margin-bottom: 7px;
 }
-/* line 55, ../sass/sections/_last-works.scss */
+/* line 62, ../sass/sections/_last-works.scss */
 .last-works .figcaption p {
   font-size: 11px;
   color: #02baab;
 }
-/* line 60, ../sass/sections/_last-works.scss */
+/* line 67, ../sass/sections/_last-works.scss */
 .last-works .figcaption .fa-heart {
   margin-bottom: 5px;
 }
 
-/* line 66, ../sass/sections/_last-works.scss */
+/* line 73, ../sass/sections/_last-works.scss */
 .list-control {
   color: #fff;
   margin: 0 10px;
 }
 @media (max-width: 991px) {
-  /* line 66, ../sass/sections/_last-works.scss */
+  /* line 73, ../sass/sections/_last-works.scss */
   .list-control {
     display: none;
   }
 }
 
-/* line 76, ../sass/sections/_last-works.scss */
+/* line 83, ../sass/sections/_last-works.scss */
 .links {
   opacity: 0;
+  transition: all 0.5s;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+/* line 91, ../sass/sections/_last-works.scss */
+.links-main {
+  color: #fff;
+}
+/* line 95, ../sass/sections/_last-works.scss */
+.links-icon {
+  background-color: #02baab;
+  border-radius: 50%;
+  padding: 10px;
+}
+/* line 101, ../sass/sections/_last-works.scss */
+.links-item {
+  margin-bottom: 10px;
 }
 
 /* line 1, ../sass/sections/_buy-now.scss */
@@ -703,6 +725,77 @@ html, body {
   left: 0;
   position: absolute;
   top: 0;
+}
+
+/* line 1, ../sass/sections/_our-team.scss */
+.our-team {
+  min-height: 100vh;
+  color: #3b4954;
+  padding: 100px 0;
+}
+/* line 6, ../sass/sections/_our-team.scss */
+.our-team figure {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid #c3c3c3;
+}
+/* line 15, ../sass/sections/_our-team.scss */
+.our-team figure:hover .cover {
+  opacity: 0;
+  transform: translateY(30%);
+}
+/* line 19, ../sass/sections/_our-team.scss */
+.our-team figure:hover .cover-info {
+  opacity: 0;
+}
+/* line 28, ../sass/sections/_our-team.scss */
+.our-team-item .btn {
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+/* line 35, ../sass/sections/_our-team.scss */
+.cover {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 50px 20px 0;
+  transition: all 0.4s ease-out;
+  bottom: 100px;
+  transform: translateY(0);
+}
+/* line 46, ../sass/sections/_our-team.scss */
+.cover-info {
+  font-weight: 400;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  background-color: #fff;
+  border: 1px solid #c3c3c3;
+  width: 136px;
+  padding: 8px 0;
+  transition: all 0.4s ease-out;
+}
+/* line 58, ../sass/sections/_our-team.scss */
+.cover-info h4 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #02baab;
+  opacity: 1;
+}
+/* line 65, ../sass/sections/_our-team.scss */
+.cover-info p {
+  color: #9b9b9b;
+}
+/* line 70, ../sass/sections/_our-team.scss */
+.cover p {
+  opacity: 1;
+  transition: all 0.4s ease-out;
 }
 
 /* line 1, ../sass/sections/_footer.scss */

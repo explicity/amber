@@ -12,6 +12,9 @@
         max-width: 930px;
     }
 
+    &-img {
+        transition: .3s ease-in-out;
+    }
 
     &-item {
         display: flex;
@@ -24,19 +27,21 @@
 
         figure {
             position: relative;        
-            width: 290px;
-            height: 290px;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            overflow: hidden;
     
-            &::hover { 
+            &:hover {
+
+                .figcaption {
+                    opacity: 0;
+                }
+
                 .links {
                     opacity: 1;
-                    z-index: 100;
-            }
-        }
+                }
+
+                .last-works-img {
+                    filter: blur(2px);
+                }
+            }   
         }
     }
 
@@ -45,6 +50,8 @@
         top: 80%;
         width: 290px;
         padding: 0 15px;
+        opacity: 1;
+        transition: all 0.5s;
 
         h4 {
             font-size: 14px;
@@ -75,8 +82,23 @@
 
 .links {
     opacity: 0;
+    transition: all 0.5s;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    &-main {
+        color: $color-white;
+    }
+
+    &-icon {
+        background-color: $color-secondary;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    &-item {
+        margin-bottom: 10px;
+    }
 }

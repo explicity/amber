@@ -19,6 +19,7 @@
             line-height: 14px !important;
             
             &:before {
+                transition: 0.3s;
                 @include pseudo ('../../img/comment.png', 19px, 14px);
             }
     
@@ -103,24 +104,44 @@
             @include pseudo ('../../img/tweet.png', 14px, 13px);  
         }
 
-        &-facebook:before {
-            @include pseudo ('../../img/facebook.png', 50px, 50px);
+        &-facebook {
+            position: relative;
+
+            &:before {
+                @include pseudo ('../../img/facebook.png', 50px, 50px);
+            }
         }
 
-        &-twitter:before {
-            @include pseudo ('../../img/twitter.png', 50px, 50px);
+        &-twitter {
+            position: relative;
+
+            &:before {
+                @include pseudo ('../../img/twitter.png', 50px, 50px);
+            }
         }
 
-        &-youtube:before {
-            @include pseudo ('../../img/youtube.png', 50px, 50px);
+        &-youtube {
+            position: relative;
+
+            &:before {
+                @include pseudo ('../../img/youtube.png', 50px, 50px);
+            }
         }
 
-        &-instagram:before {
-            @include pseudo ('../../img/instagram.png', 50px, 50px);
+        &-instagram {
+            position: relative;
+
+            &:before {
+                @include pseudo ('../../img/instagram.png', 50px, 50px);
+            }
         }
 
-        &-pinterest:before {
-            @include pseudo ('../../img/pinterest.png', 50px, 50px);
+        &-pinterest {
+            position: relative;
+
+            &:before {
+                @include pseudo ('../../img/pinterest.png', 50px, 50px);
+            }
         }
 }
     

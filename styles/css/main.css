@@ -293,7 +293,7 @@ html a:hover, body a:hover {
 .last-works {
   background: url(../../img/bg.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 740px;
+  min-height: 100vh;
   color: #fff;
   padding: 100px 0;
 }
@@ -719,29 +719,37 @@ html a:hover, body a:hover {
   padding: 100px 0;
 }
 /* line 6, ../sass/sections/_our-team.scss */
-.our-team figure {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+.our-team .wrapper {
+  width: min-content;
+  margin: 0 auto;
   border: 1px solid #c3c3c3;
 }
-/* line 15, ../sass/sections/_our-team.scss */
+/* line 12, ../sass/sections/_our-team.scss */
+.our-team figure {
+  position: relative;
+  overflow: hidden;
+}
+/* line 18, ../sass/sections/_our-team.scss */
 .our-team figure:hover .cover {
   opacity: 0;
-  transform: translateY(30%);
+  transform: translateY(100%);
 }
-/* line 19, ../sass/sections/_our-team.scss */
+/* line 22, ../sass/sections/_our-team.scss */
 .our-team figure:hover .cover-info {
   opacity: 0;
 }
-/* line 28, ../sass/sections/_our-team.scss */
+@media (max-width: 991px) {
+  /* line 29, ../sass/sections/_our-team.scss */
+  .our-team-item {
+    margin-bottom: 50px;
+  }
+}
+/* line 35, ../sass/sections/_our-team.scss */
 .our-team-item .btn {
   margin: 30px 0;
-  overflow: hidden;
 }
 
-/* line 35, ../sass/sections/_our-team.scss */
+/* line 41, ../sass/sections/_our-team.scss */
 .cover {
   position: absolute;
   background-color: #fff;
@@ -749,11 +757,11 @@ html a:hover, body a:hover {
   font-size: 12px;
   line-height: 24px;
   padding: 50px 20px 0;
-  transition: all 0.4s ease-out;
-  bottom: 100px;
+  transition: all 0.5s ease-out;
+  bottom: 0;
   transform: translateY(0);
 }
-/* line 46, ../sass/sections/_our-team.scss */
+/* line 52, ../sass/sections/_our-team.scss */
 .cover-info {
   font-weight: 400;
   position: absolute;
@@ -764,23 +772,22 @@ html a:hover, body a:hover {
   border: 1px solid #c3c3c3;
   width: 136px;
   padding: 8px 0;
-  transition: all 0.4s ease-out;
+  transition: all 0.5s ease-out;
 }
-/* line 58, ../sass/sections/_our-team.scss */
+/* line 64, ../sass/sections/_our-team.scss */
 .cover-info h4 {
   font-size: 14px;
   line-height: 18px;
   color: #02baab;
   opacity: 1;
 }
-/* line 65, ../sass/sections/_our-team.scss */
+/* line 71, ../sass/sections/_our-team.scss */
 .cover-info p {
   color: #9b9b9b;
 }
-/* line 70, ../sass/sections/_our-team.scss */
+/* line 76, ../sass/sections/_our-team.scss */
 .cover p {
   opacity: 1;
-  transition: all 0.4s ease-out;
 }
 
 /* line 1, ../sass/sections/_footer.scss */

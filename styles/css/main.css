@@ -268,12 +268,12 @@ html a:hover, body a:hover {
 }
 
 /* line 12, ../sass/sections/_info-section.scss */
-.header-section {
+.title-section {
   font-size: 36px;
   margin-bottom: 50px;
 }
 /* line 16, ../sass/sections/_info-section.scss */
-.header-section:after {
+.title-section:after {
   border-bottom-color: #eeeeee;
   padding-top: 30px;
   content: '';
@@ -284,7 +284,7 @@ html a:hover, body a:hover {
   border-bottom-width: 5px;
 }
 /* line 21, ../sass/sections/_info-section.scss */
-.header-content {
+.title-content {
   line-height: 30px;
   margin-bottom: 40px;
 }
@@ -580,51 +580,60 @@ html a:hover, body a:hover {
   color: #02baab;
   transition: 0.3s;
 }
-/* line 14, ../sass/sections/_blog-posts.scss */
-.blog-posts-link:hover {
-  text-decoration: none;
-  color: #6d0fae;
-}
-/* line 20, ../sass/sections/_blog-posts.scss */
+/* line 16, ../sass/sections/_blog-posts.scss */
 .blog-posts-item {
   font-size: 14px;
 }
+/* line 19, ../sass/sections/_blog-posts.scss */
+.blog-posts-item:hover .blog-posts-link {
+  text-decoration: none;
+  color: #6d0fae;
+}
+/* line 24, ../sass/sections/_blog-posts.scss */
+.blog-posts-item:hover .icon-comment:before {
+  content: '';
+  background: url("../../img/comment-hover.png") no-repeat center center;
+  display: block;
+  width: 19px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 30, ../sass/sections/_blog-posts.scss */
+.blog-posts-item.col-12 {
+  flex: 0 0 60%;
+}
 @media (max-width: 991px) {
-  /* line 20, ../sass/sections/_blog-posts.scss */
+  /* line 16, ../sass/sections/_blog-posts.scss */
   .blog-posts-item {
     margin-bottom: 50px;
   }
 }
-/* line 27, ../sass/sections/_blog-posts.scss */
+/* line 40, ../sass/sections/_blog-posts.scss */
 .blog-posts-item:after {
   border-bottom-color: #c3c3c3;
   content: '';
   display: block;
-  margin: 0 auto;
-  width: 290px;
   border-bottom-style: inset;
   border-bottom-width: 1px;
 }
-/* line 37, ../sass/sections/_blog-posts.scss */
+/* line 48, ../sass/sections/_blog-posts.scss */
 .blog-posts-item h4 {
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 15px;
 }
-/* line 43, ../sass/sections/_blog-posts.scss */
+/* line 54, ../sass/sections/_blog-posts.scss */
 .blog-posts-item p {
   color: #555;
   margin-bottom: 15px;
   line-height: 24px;
 }
-/* line 51, ../sass/sections/_blog-posts.scss */
+/* line 62, ../sass/sections/_blog-posts.scss */
 .blog-posts-img {
   display: block;
   margin: 0 auto 20px auto;
-}
-/* line 56, ../sass/sections/_blog-posts.scss */
-.blog-posts .col-12 {
-  flex: 0 0 60%;
 }
 
 /* line 1, ../sass/sections/_experience.scss */
@@ -956,6 +965,94 @@ html a:hover, body a:hover {
   animation-timing-function: ease-out;
 }
 
+/* line 1, ../sass/sections/_welcome-blog.scss */
+.welcome-blog {
+  background: url("../../img/bg-blog.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 300px;
+  margin-top: 122px;
+}
+/* line 8, ../sass/sections/_welcome-blog.scss */
+.welcome-blog-main {
+  position: absolute;
+  width: 100%;
+  bottom: 45px;
+}
+/* line 14, ../sass/sections/_welcome-blog.scss */
+.welcome-blog-main h2 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+/* line 25, ../sass/sections/_welcome-blog.scss */
+.secondary-main {
+  flex-wrap: wrap;
+  color: #85939f;
+  font-size: 12px;
+}
+/* line 30, ../sass/sections/_welcome-blog.scss */
+.secondary-main .row {
+  margin: 0;
+}
+/* line 34, ../sass/sections/_welcome-blog.scss */
+.secondary-main .list-item {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+/* line 38, ../sass/sections/_welcome-blog.scss */
+.secondary-main .list-item p {
+  line-height: 20px;
+}
+/* line 43, ../sass/sections/_welcome-blog.scss */
+.secondary-main-info {
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* line 1, ../sass/sections/_grid-section.scss */
+.grid-section {
+  padding: 50px 0;
+}
+/* line 4, ../sass/sections/_grid-section.scss */
+.grid-section .blog-posts-item {
+  margin-bottom: 50px;
+}
+
+/* line 10, ../sass/sections/_grid-section.scss */
+.pagination p {
+  width: 30px;
+  text-align: center;
+}
+
+/* line 21, ../sass/sections/_grid-section.scss */
+.page-item.active .page-link {
+  color: #3b4954;
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+}
+/* line 27, ../sass/sections/_grid-section.scss */
+.page-item:first-child .page-link {
+  border-radius: 0;
+}
+/* line 32, ../sass/sections/_grid-section.scss */
+.page-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #02baab;
+  padding: 2px 12px;
+  border: none;
+  transition: 0.2s;
+}
+/* line 41, ../sass/sections/_grid-section.scss */
+.page-link:hover {
+  color: #6d0fae;
+  background-color: transparent;
+}
+
 /* line 1, ../sass/sections/_icons.scss */
 .icon {
   position: relative;
@@ -990,18 +1087,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 26, ../sass/sections/_icons.scss */
-.icon-comment:hover:before {
-  content: '';
-  background: url("../../img/comment-hover.png") no-repeat center center;
-  display: block;
-  width: 19px;
-  height: 14px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-/* line 33, ../sass/sections/_icons.scss */
+/* line 29, ../sass/sections/_icons.scss */
 .icon-dots:before {
   content: '';
   background: url(../../img/dots.png) no-repeat center center;
@@ -1014,12 +1100,12 @@ html a:hover, body a:hover {
   transform: translate(80%, -50%);
 }
 @media (max-width: 991px) {
-  /* line 33, ../sass/sections/_icons.scss */
+  /* line 29, ../sass/sections/_icons.scss */
   .icon-dots:before {
     display: none;
   }
 }
-/* line 49, ../sass/sections/_icons.scss */
+/* line 45, ../sass/sections/_icons.scss */
 .icon-dots:after {
   content: '';
   background: url(../../img/dots.png) no-repeat center center;
@@ -1032,12 +1118,12 @@ html a:hover, body a:hover {
   transform: translate(-180%, -50%);
 }
 @media (max-width: 991px) {
-  /* line 49, ../sass/sections/_icons.scss */
+  /* line 45, ../sass/sections/_icons.scss */
   .icon-dots:after {
     display: none;
   }
 }
-/* line 66, ../sass/sections/_icons.scss */
+/* line 62, ../sass/sections/_icons.scss */
 .icon-star:before {
   content: '';
   background: url("../../img/star.png") no-repeat center center;
@@ -1048,7 +1134,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 70, ../sass/sections/_icons.scss */
+/* line 66, ../sass/sections/_icons.scss */
 .icon-winner:before {
   content: '';
   background: url("../../img/winner.png") no-repeat center center;
@@ -1059,7 +1145,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 74, ../sass/sections/_icons.scss */
+/* line 70, ../sass/sections/_icons.scss */
 .icon-stick:before {
   content: '';
   background: url("../../img/stick.png") no-repeat center center;
@@ -1070,7 +1156,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 78, ../sass/sections/_icons.scss */
+/* line 74, ../sass/sections/_icons.scss */
 .icon-cloud:before {
   content: '';
   background: url("../../img/cloud.png") no-repeat center center;
@@ -1081,7 +1167,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 83, ../sass/sections/_icons.scss */
+/* line 79, ../sass/sections/_icons.scss */
 .icon-login:before {
   content: '';
   background: url("../../img/login.png") no-repeat center center;
@@ -1092,7 +1178,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 87, ../sass/sections/_icons.scss */
+/* line 83, ../sass/sections/_icons.scss */
 .icon-register:before {
   content: '';
   background: url("../../img/regist.png") no-repeat center center;
@@ -1103,7 +1189,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 91, ../sass/sections/_icons.scss */
+/* line 87, ../sass/sections/_icons.scss */
 .icon-address:before {
   content: '';
   background: url("../../img/address.png") no-repeat center center;
@@ -1114,7 +1200,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 95, ../sass/sections/_icons.scss */
+/* line 91, ../sass/sections/_icons.scss */
 .icon-phone:before {
   content: '';
   background: url("../../img/phone.png") no-repeat center center;
@@ -1125,7 +1211,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 99, ../sass/sections/_icons.scss */
+/* line 95, ../sass/sections/_icons.scss */
 .icon-email:before {
   content: '';
   background: url("../../img/email.png") no-repeat center center;
@@ -1136,7 +1222,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 103, ../sass/sections/_icons.scss */
+/* line 99, ../sass/sections/_icons.scss */
 .icon-tweet:before {
   content: '';
   background: url("../../img/tweet.png") no-repeat center center;
@@ -1147,11 +1233,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 107, ../sass/sections/_icons.scss */
+/* line 103, ../sass/sections/_icons.scss */
 .icon-facebook {
   position: relative;
 }
-/* line 110, ../sass/sections/_icons.scss */
+/* line 106, ../sass/sections/_icons.scss */
 .icon-facebook:before {
   content: '';
   background: url("../../img/facebook.png") no-repeat center center;
@@ -1162,11 +1248,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 115, ../sass/sections/_icons.scss */
+/* line 111, ../sass/sections/_icons.scss */
 .icon-twitter {
   position: relative;
 }
-/* line 118, ../sass/sections/_icons.scss */
+/* line 114, ../sass/sections/_icons.scss */
 .icon-twitter:before {
   content: '';
   background: url("../../img/twitter.png") no-repeat center center;
@@ -1177,11 +1263,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 123, ../sass/sections/_icons.scss */
+/* line 119, ../sass/sections/_icons.scss */
 .icon-youtube {
   position: relative;
 }
-/* line 126, ../sass/sections/_icons.scss */
+/* line 122, ../sass/sections/_icons.scss */
 .icon-youtube:before {
   content: '';
   background: url("../../img/youtube.png") no-repeat center center;
@@ -1192,11 +1278,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 131, ../sass/sections/_icons.scss */
+/* line 127, ../sass/sections/_icons.scss */
 .icon-instagram {
   position: relative;
 }
-/* line 134, ../sass/sections/_icons.scss */
+/* line 130, ../sass/sections/_icons.scss */
 .icon-instagram:before {
   content: '';
   background: url("../../img/instagram.png") no-repeat center center;
@@ -1207,11 +1293,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 139, ../sass/sections/_icons.scss */
+/* line 135, ../sass/sections/_icons.scss */
 .icon-pinterest {
   position: relative;
 }
-/* line 142, ../sass/sections/_icons.scss */
+/* line 138, ../sass/sections/_icons.scss */
 .icon-pinterest:before {
   content: '';
   background: url("../../img/pinterest.png") no-repeat center center;
@@ -1221,6 +1307,36 @@ html a:hover, body a:hover {
   position: absolute;
   left: 0;
   top: 0;
+}
+/* line 143, ../sass/sections/_icons.scss */
+.icon-user:before {
+  font-family: 'FontAwesome';
+  content: "\f007";
+  margin-right: 10px;
+  color: #c3c3c3;
+  background-color: #3b4954;
+  border-radius: 50%;
+  padding: 4px 6px;
+}
+/* line 153, ../sass/sections/_icons.scss */
+.icon-time:before {
+  font-family: 'FontAwesome';
+  content: "\f017";
+  margin-right: 10px;
+  color: #c3c3c3;
+  background-color: #3b4954;
+  border-radius: 50%;
+  padding: 4px 5px;
+}
+/* line 163, ../sass/sections/_icons.scss */
+.icon-comments:before {
+  font-family: 'FontAwesome';
+  content: "\f10d";
+  margin-right: 10px;
+  color: #c3c3c3;
+  background-color: #3b4954;
+  border-radius: 50%;
+  padding: 4px 5px;
 }
 
 /* line 1, ../sass/sections/_btn.scss */

@@ -1,4 +1,4 @@
-.welcome-blog {
+.title-blog {
 	background: url('../../img/bg-blog.jpg') no-repeat center center;
 	background-size: cover;
 	position: relative;
@@ -20,28 +20,28 @@
 
 
 	}
-}
 
-.secondary-main {
-	flex-wrap: wrap;
-	color: $color-top-header;
-	font-size: 12px;
+	&-secondary {
+		flex-wrap: wrap;
+		color: $color-top-header;
+		font-size: 12px;
 
-	.row {
-		margin: 0;
-	}
-
-	.list-item {
-		margin-right: 20px;
-		margin-bottom: 10px;
-
-		p {
-			line-height: 20px; 
+		.row {
+			margin: 0;
 		}
-	}
 
-	&-info {
-		line-height: 24px;
-		font-weight: $font-normal;
+		.list-item {
+			margin-right: 20px;
+			margin-bottom: 10px;
+
+			p {	
+				line-height: 20px; 
+			}
+		}
+
+		&-info {
+			line-height: 24px;
+			font-weight: $font-normal;
+		}
 	}
 }

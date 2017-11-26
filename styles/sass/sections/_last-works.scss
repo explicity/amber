@@ -75,17 +75,16 @@
             margin-bottom: 5px;
         }
     }
-}
 
-.list-control {
+    .list-control {
     color: $color-white;
     margin: 0 10px;
 
     @media (max-width: 991px) {
         display: none;
     }
+} 
 }
-
 
 .links {
     opacity: 0;

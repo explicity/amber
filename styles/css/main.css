@@ -363,20 +363,19 @@ html a:hover, body a:hover {
 .last-works .figcaption .fa-heart {
   margin-bottom: 5px;
 }
-
-/* line 80, ../sass/sections/_last-works.scss */
-.list-control {
+/* line 79, ../sass/sections/_last-works.scss */
+.last-works .list-control {
   color: #fff;
   margin: 0 10px;
 }
 @media (max-width: 991px) {
-  /* line 80, ../sass/sections/_last-works.scss */
-  .list-control {
+  /* line 79, ../sass/sections/_last-works.scss */
+  .last-works .list-control {
     display: none;
   }
 }
 
-/* line 90, ../sass/sections/_last-works.scss */
+/* line 89, ../sass/sections/_last-works.scss */
 .links {
   opacity: 0;
   transition: all 0.5s;
@@ -385,17 +384,17 @@ html a:hover, body a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 98, ../sass/sections/_last-works.scss */
+/* line 97, ../sass/sections/_last-works.scss */
 .links-main {
   color: #fff;
 }
-/* line 102, ../sass/sections/_last-works.scss */
+/* line 101, ../sass/sections/_last-works.scss */
 .links-icon {
   background-color: #02baab;
   border-radius: 50%;
   padding: 10px;
 }
-/* line 108, ../sass/sections/_last-works.scss */
+/* line 107, ../sass/sections/_last-works.scss */
 .links-item {
   margin-bottom: 10px;
 }
@@ -965,79 +964,78 @@ html a:hover, body a:hover {
   animation-timing-function: ease-out;
 }
 
-/* line 1, ../sass/sections/_welcome-blog.scss */
-.welcome-blog {
+/* line 1, ../sass/sections/_title-blog.scss */
+.title-blog {
   background: url("../../img/bg-blog.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   min-height: 300px;
   margin-top: 122px;
 }
-/* line 8, ../sass/sections/_welcome-blog.scss */
-.welcome-blog-main {
+/* line 8, ../sass/sections/_title-blog.scss */
+.title-blog-main {
   position: absolute;
   width: 100%;
   bottom: 45px;
 }
-/* line 14, ../sass/sections/_welcome-blog.scss */
-.welcome-blog-main h2 {
+/* line 14, ../sass/sections/_title-blog.scss */
+.title-blog-main h2 {
   color: #fff;
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 25px;
 }
-
-/* line 25, ../sass/sections/_welcome-blog.scss */
-.secondary-main {
+/* line 24, ../sass/sections/_title-blog.scss */
+.title-blog-secondary {
   flex-wrap: wrap;
   color: #85939f;
   font-size: 12px;
 }
-/* line 30, ../sass/sections/_welcome-blog.scss */
-.secondary-main .row {
+/* line 29, ../sass/sections/_title-blog.scss */
+.title-blog-secondary .row {
   margin: 0;
 }
-/* line 34, ../sass/sections/_welcome-blog.scss */
-.secondary-main .list-item {
+/* line 33, ../sass/sections/_title-blog.scss */
+.title-blog-secondary .list-item {
   margin-right: 20px;
   margin-bottom: 10px;
 }
-/* line 38, ../sass/sections/_welcome-blog.scss */
-.secondary-main .list-item p {
+/* line 37, ../sass/sections/_title-blog.scss */
+.title-blog-secondary .list-item p {
   line-height: 20px;
 }
-/* line 43, ../sass/sections/_welcome-blog.scss */
-.secondary-main-info {
+/* line 42, ../sass/sections/_title-blog.scss */
+.title-blog-secondary-info {
   line-height: 24px;
   font-weight: 400;
 }
 
-/* line 1, ../sass/sections/_grid-section.scss */
-.grid-section {
+/* line 3, ../sass/sections/_blog-section.scss */
+.blog-section {
   padding: 50px 0;
 }
-/* line 4, ../sass/sections/_grid-section.scss */
-.grid-section .blog-posts-item {
+/* line 7, ../sass/sections/_blog-section.scss */
+.blog-posts-item {
   margin-bottom: 50px;
 }
 
-/* line 10, ../sass/sections/_grid-section.scss */
+/* line 13, ../sass/sections/_blog-section.scss */
 .pagination p {
   width: 30px;
   text-align: center;
 }
 
-/* line 21, ../sass/sections/_grid-section.scss */
+/* line 24, ../sass/sections/_blog-section.scss */
 .page-item.active .page-link {
   color: #3b4954;
   background-color: #eeeeee;
   border-color: #eeeeee;
 }
-/* line 27, ../sass/sections/_grid-section.scss */
+/* line 30, ../sass/sections/_blog-section.scss */
 .page-item:first-child .page-link {
   border-radius: 0;
 }
-/* line 32, ../sass/sections/_grid-section.scss */
+/* line 35, ../sass/sections/_blog-section.scss */
 .page-link {
   font-size: 14px;
   font-weight: 400;
@@ -1047,10 +1045,117 @@ html a:hover, body a:hover {
   border: none;
   transition: 0.2s;
 }
-/* line 41, ../sass/sections/_grid-section.scss */
+/* line 44, ../sass/sections/_blog-section.scss */
 .page-link:hover {
   color: #6d0fae;
   background-color: transparent;
+}
+
+/* line 1, ../sass/sections/_single-blog.scss */
+.single-blog {
+  padding: 50px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474e52;
+}
+/* line 7, ../sass/sections/_single-blog.scss */
+.single-blog-title {
+  color: #474d52;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+/* line 14, ../sass/sections/_single-blog.scss */
+.single-blog-img {
+  margin-bottom: 50px;
+}
+/* line 18, ../sass/sections/_single-blog.scss */
+.single-blog .list-control {
+  color: #02baab;
+  margin: 0 10px;
+}
+
+/* line 26, ../sass/sections/_single-blog.scss */
+.sidebar-section {
+  margin-bottom: 30px;
+}
+/* line 29, ../sass/sections/_single-blog.scss */
+.sidebar-section h3 {
+  margin-bottom: 10px;
+}
+/* line 34, ../sass/sections/_single-blog.scss */
+.sidebar-item {
+  padding-left: 20px;
+  border-bottom: 1px solid #c3c3c3;
+}
+/* line 38, ../sass/sections/_single-blog.scss */
+.sidebar-item a {
+  font-size: 12px;
+  line-height: 35px;
+  color: #02baab;
+  transition: .2s;
+}
+/* line 44, ../sass/sections/_single-blog.scss */
+.sidebar-item a:hover {
+  color: #6d0fae;
+}
+/* line 52, ../sass/sections/_single-blog.scss */
+.sidebar .categories .sidebar-item:before {
+  content: '\f097';
+  font-family: FontAwesome;
+  margin-left: -20px;
+  margin-right: 7px;
+  width: 30px;
+  color: #c3c3c3;
+}
+/* line 64, ../sass/sections/_single-blog.scss */
+.sidebar .comments .sidebar-item {
+  line-height: 18px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+/* line 69, ../sass/sections/_single-blog.scss */
+.sidebar .comments .sidebar-item p:before {
+  content: '\f10d';
+  font-family: FontAwesome;
+  margin-left: -20px;
+  margin-right: 7px;
+  width: 30px;
+  color: #c3c3c3;
+}
+/* line 78, ../sass/sections/_single-blog.scss */
+.sidebar .comments .sidebar-item a {
+  line-height: 18px;
+}
+
+/* line 89, ../sass/sections/_single-blog.scss */
+.tagcloud li {
+  display: inline-block;
+  margin: 0 1px 2px 0;
+  padding: 0;
+}
+/* line 94, ../sass/sections/_single-blog.scss */
+.tagcloud li a {
+  display: inline-block;
+  max-width: 100px;
+  height: 28px;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 0 8px;
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #02baab;
+  text-decoration: none;
+  transition: .2s;
+}
+/* line 110, ../sass/sections/_single-blog.scss */
+.tagcloud li a:hover {
+  color: #fff;
+  background-color: #02baab;
+  border-color: #02baab;
 }
 
 /* line 1, ../sass/sections/_icons.scss */

@@ -1,0 +1,75 @@
+.comment-section {
+	background-color: $bg-comment; 
+	padding: 40px 0 100px 0;
+	font-size: 14px;
+	color: $color-dark;
+	
+	.add-comment {
+		form {
+			margin-bottom: 50px;
+
+			label {
+				display: inline-block;
+				margin-bottom: 5px;
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: $font-bold;
+			}
+		}
+
+		&-input {
+			background-color: $color-white;
+			box-shadow: 0 -1px 0 #9eb9c9;
+			border-color: $color-white;
+		}
+
+		.btn {
+
+			&-lg {
+				border-width: 3px;
+			}
+
+			&-primary {
+				background-color: $color-white;
+
+				&:hover {
+					background-color: $color-secondary;
+					color: $color-white;
+				}
+			}
+		}
+	}
+
+	&-info { 
+		font-size: 14px;
+		background-color: $color-white;
+		border: 5px solid $border-comment;
+		padding: 20px;
+		margin-bottom: 15px;
+
+		header {
+			border-bottom: 1px solid $color-separator;
+			margin-bottom: 5px;
+
+			p {
+				font-size: 12px;
+				line-height: 24px;
+				color: $color-top-header;
+			}
+
+			a {
+				line-height: 24px;
+				font-weight: $font-bold;
+				color: $color-secondary;
+			}
+		}
+
+		p {
+			line-height: 20px;
+		}
+
+		&.comment-reply {
+			margin-left: 30px;
+		}
+	}
+}

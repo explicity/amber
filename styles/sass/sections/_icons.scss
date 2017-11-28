@@ -84,6 +84,22 @@
             @include pseudo ('../../img/regist.png', 14px, 13px);
         }
 
+        &-wishlist:before {
+            @include pseudo ('../../img/wishlist.png', 14px, 12px);
+        }
+
+        &-logout:before {
+            @include pseudo ('../../img/logout.png', 12px, 13px);
+        }
+
+        &-basket:after {
+            content: '\f291';
+            font-family: FontAwesome;
+            display: inline-block;
+            color: #ffae00;
+            margin-left: 5px;
+        }
+
         &-address:before {
             @include pseudo ('../../img/address.png', 14px, 13px);
         }

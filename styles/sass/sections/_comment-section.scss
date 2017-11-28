@@ -43,9 +43,10 @@
 	&-info { 
 		font-size: 14px;
 		background-color: $color-white;
-		border: 5px solid $border-comment;
 		padding: 20px;
 		margin-bottom: 15px;
+		border: 5px solid $color-white;
+		transition: .2s;
 
 		header {
 			border-bottom: 1px solid $color-separator;
@@ -62,6 +63,11 @@
 				font-weight: $font-bold;
 				color: $color-secondary;
 			}
+
+			.reply-link {
+				opacity: 0;
+				transition: .2s;
+			}
 		}
 
 		p {
@@ -70,6 +76,14 @@
 
 		&.comment-reply {
 			margin-left: 30px;
+		}
+
+		&:hover {
+			border: 5px solid $border-comment;
+
+			.reply-link {
+				opacity: 1;
+			}
 		}
 	}
 }

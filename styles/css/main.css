@@ -113,7 +113,12 @@ html a:hover, body a:hover {
   text-decoration: none;
   color: #fff;
 }
-/* line 52, ../sass/sections/_header.scss */
+/* line 50, ../sass/sections/_header.scss */
+.header-top-link.icon-basket {
+  padding-left: 0;
+  font-size: 12px;
+}
+/* line 57, ../sass/sections/_header.scss */
 .header-top .btn {
   background-color: transparent;
   padding: 0;
@@ -123,21 +128,21 @@ html a:hover, body a:hover {
   background: url("../../img/search.png") no-repeat center center;
   cursor: pointer;
 }
-/* line 61, ../sass/sections/_header.scss */
+/* line 66, ../sass/sections/_header.scss */
 .header-top .btn:hover {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 67, ../sass/sections/_header.scss */
+/* line 72, ../sass/sections/_header.scss */
 .header-top .navbar-nav {
   flex-direction: row;
 }
 @media (min-width: 992px) {
-  /* line 75, ../sass/sections/_header.scss */
+  /* line 80, ../sass/sections/_header.scss */
   .header .navbar {
     padding: 0;
   }
-  /* line 79, ../sass/sections/_header.scss */
+  /* line 84, ../sass/sections/_header.scss */
   .header .nav-item {
     width: 99px;
     height: 74px;
@@ -145,37 +150,37 @@ html a:hover, body a:hover {
     align-items: center;
     justify-content: center;
   }
-  /* line 89, ../sass/sections/_header.scss */
+  /* line 94, ../sass/sections/_header.scss */
   .header .border-yellow {
     border-top: 10px solid #ffae00;
   }
-  /* line 93, ../sass/sections/_header.scss */
+  /* line 98, ../sass/sections/_header.scss */
   .header .border-orange {
     border-top: 10px solid #fc7100;
   }
-  /* line 97, ../sass/sections/_header.scss */
+  /* line 102, ../sass/sections/_header.scss */
   .header .border-pink {
     border-top: 10px solid #e51c5e;
   }
-  /* line 101, ../sass/sections/_header.scss */
+  /* line 106, ../sass/sections/_header.scss */
   .header .border-purple {
     border-top: 10px solid #ae0f8d;
   }
-  /* line 105, ../sass/sections/_header.scss */
+  /* line 110, ../sass/sections/_header.scss */
   .header .border-violet {
     border-top: 10px solid #6d0fae;
   }
-  /* line 109, ../sass/sections/_header.scss */
+  /* line 114, ../sass/sections/_header.scss */
   .header .border-blue {
     border-top: 10px solid #33227a;
   }
-  /* line 113, ../sass/sections/_header.scss */
+  /* line 118, ../sass/sections/_header.scss */
   .header .border-aqua {
     border-top: 10px solid #0c8fcc;
   }
 }
 
-/* line 123, ../sass/sections/_header.scss */
+/* line 128, ../sass/sections/_header.scss */
 .form-control {
   border: 1px solid rgba(133, 147, 159, 0.5);
   background-color: transparent;
@@ -183,18 +188,18 @@ html a:hover, body a:hover {
   font-size: 12px;
   padding: 4px 20px 4px 10px;
 }
-/* line 130, ../sass/sections/_header.scss */
+/* line 135, ../sass/sections/_header.scss */
 .form-control:placeholder {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
-/* line 137, ../sass/sections/_header.scss */
+/* line 142, ../sass/sections/_header.scss */
 .navbar {
   padding: 12px;
 }
 
-/* line 143, ../sass/sections/_header.scss */
+/* line 148, ../sass/sections/_header.scss */
 .nav-link {
   font-size: 12px;
   text-transform: uppercase;
@@ -308,39 +313,45 @@ html a:hover, body a:hover {
   }
 }
 /* line 18, ../sass/sections/_last-works.scss */
-.last-works-img {
-  transition: .3s ease-in-out;
-}
-/* line 22, ../sass/sections/_last-works.scss */
-.last-works-item {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+.last-works .list-control {
+  color: #fff;
+  margin: 0 10px;
 }
 @media (max-width: 991px) {
-  /* line 22, ../sass/sections/_last-works.scss */
-  .last-works-item {
-    margin-bottom: 50px;
+  /* line 18, ../sass/sections/_last-works.scss */
+  .last-works .list-control {
+    display: none;
   }
 }
-/* line 31, ../sass/sections/_last-works.scss */
-.last-works-item figure {
+
+/* line 30, ../sass/sections/_last-works.scss */
+.works-list-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+/* line 35, ../sass/sections/_last-works.scss */
+.works-list-item figure {
   position: relative;
 }
-/* line 36, ../sass/sections/_last-works.scss */
-.last-works-item figure:hover .figcaption {
+/* line 40, ../sass/sections/_last-works.scss */
+.works-list-item figure:hover .figcaption {
   opacity: 0;
 }
-/* line 40, ../sass/sections/_last-works.scss */
-.last-works-item figure:hover .links {
+/* line 44, ../sass/sections/_last-works.scss */
+.works-list-item figure:hover .links {
   opacity: 1;
 }
-/* line 44, ../sass/sections/_last-works.scss */
-.last-works-item figure:hover .last-works-img {
+/* line 48, ../sass/sections/_last-works.scss */
+.works-list-item figure:hover .works-list-img {
   filter: blur(2px);
 }
-/* line 51, ../sass/sections/_last-works.scss */
-.last-works .figcaption {
+/* line 55, ../sass/sections/_last-works.scss */
+.works-list-img {
+  transition: .3s ease-in-out;
+}
+/* line 59, ../sass/sections/_last-works.scss */
+.works-list .figcaption {
   position: absolute;
   top: 80%;
   width: 290px;
@@ -348,34 +359,25 @@ html a:hover, body a:hover {
   opacity: 1;
   transition: all 0.5s;
 }
-/* line 61, ../sass/sections/_last-works.scss */
-.last-works .figcaption-info h4 {
+/* line 69, ../sass/sections/_last-works.scss */
+.works-list .figcaption-info h4 {
+  color: #fff;
   font-size: 14px;
   margin-top: 2px;
   margin-bottom: 7px;
 }
-/* line 69, ../sass/sections/_last-works.scss */
-.last-works .figcaption p {
+/* line 78, ../sass/sections/_last-works.scss */
+.works-list .figcaption p {
   font-size: 11px;
   color: #02baab;
 }
-/* line 74, ../sass/sections/_last-works.scss */
-.last-works .figcaption .fa-heart {
+/* line 83, ../sass/sections/_last-works.scss */
+.works-list .figcaption .fa-heart {
   margin-bottom: 5px;
-}
-/* line 79, ../sass/sections/_last-works.scss */
-.last-works .list-control {
   color: #fff;
-  margin: 0 10px;
-}
-@media (max-width: 991px) {
-  /* line 79, ../sass/sections/_last-works.scss */
-  .last-works .list-control {
-    display: none;
-  }
 }
 
-/* line 89, ../sass/sections/_last-works.scss */
+/* line 92, ../sass/sections/_last-works.scss */
 .links {
   opacity: 0;
   transition: all 0.5s;
@@ -384,17 +386,17 @@ html a:hover, body a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 97, ../sass/sections/_last-works.scss */
+/* line 100, ../sass/sections/_last-works.scss */
 .links-main {
   color: #fff;
 }
-/* line 101, ../sass/sections/_last-works.scss */
+/* line 104, ../sass/sections/_last-works.scss */
 .links-icon {
   background-color: #02baab;
   border-radius: 50%;
   padding: 10px;
 }
-/* line 107, ../sass/sections/_last-works.scss */
+/* line 110, ../sass/sections/_last-works.scss */
 .links-item {
   margin-bottom: 10px;
 }
@@ -1310,34 +1312,187 @@ html a:hover, body a:hover {
 .comment-section-info {
   font-size: 14px;
   background-color: #fff;
-  border: 5px solid #dee7ed;
   padding: 20px;
   margin-bottom: 15px;
+  border: 5px solid #fff;
+  transition: .2s;
 }
-/* line 50, ../sass/sections/_comment-section.scss */
+/* line 51, ../sass/sections/_comment-section.scss */
 .comment-section-info header {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 5px;
 }
-/* line 54, ../sass/sections/_comment-section.scss */
+/* line 55, ../sass/sections/_comment-section.scss */
 .comment-section-info header p {
   font-size: 12px;
   line-height: 24px;
   color: #85939f;
 }
-/* line 60, ../sass/sections/_comment-section.scss */
+/* line 61, ../sass/sections/_comment-section.scss */
 .comment-section-info header a {
   line-height: 24px;
   font-weight: 700;
   color: #02baab;
 }
 /* line 67, ../sass/sections/_comment-section.scss */
+.comment-section-info header .reply-link {
+  opacity: 0;
+  transition: .2s;
+}
+/* line 73, ../sass/sections/_comment-section.scss */
 .comment-section-info p {
   line-height: 20px;
 }
-/* line 71, ../sass/sections/_comment-section.scss */
+/* line 77, ../sass/sections/_comment-section.scss */
 .comment-section-info.comment-reply {
   margin-left: 30px;
+}
+/* line 81, ../sass/sections/_comment-section.scss */
+.comment-section-info:hover {
+  border: 5px solid #dee7ed;
+}
+/* line 84, ../sass/sections/_comment-section.scss */
+.comment-section-info:hover .reply-link {
+  opacity: 1;
+}
+
+/* line 1, ../sass/sections/_gallery-section.scss */
+.gallery-section {
+  padding: 50px 0 100px 0;
+}
+/* line 4, ../sass/sections/_gallery-section.scss */
+.gallery-section-info {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #3b4954;
+}
+/* line 13, ../sass/sections/_gallery-section.scss */
+.gallery-section-list li {
+  margin-right: 15px;
+}
+/* line 18, ../sass/sections/_gallery-section.scss */
+.gallery-section-list li.active a {
+  color: #3b4954;
+  border-top: 5px solid #eeeeee;
+  padding-top: 10px;
+}
+/* line 27, ../sass/sections/_gallery-section.scss */
+.gallery-section-link {
+  color: #02baab;
+  font-size: 14px;
+  transition: .2s;
+  line-height: 42px;
+}
+/* line 33, ../sass/sections/_gallery-section.scss */
+.gallery-section-link:hover {
+  color: #6d0fae;
+}
+/* line 38, ../sass/sections/_gallery-section.scss */
+.gallery-section-btn {
+  border: none;
+  background: 0 0;
+  color: #02baab;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: .2s;
+}
+/* line 47, ../sass/sections/_gallery-section.scss */
+.gallery-section-btn:hover {
+  color: #6d0fae;
+}
+
+@-webkit-keyframes hvr-icon-hang {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes hvr-icon-hang {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-webkit-keyframes hvr-icon-hang-sink {
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes hvr-icon-hang-sink {
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+/* line 94, ../sass/sections/_gallery-section.scss */
+.hvr-icon-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 104, ../sass/sections/_gallery-section.scss */
+.hvr-icon-hang:hover:before {
+  color: #6d0fae;
+}
+
+/* line 108, ../sass/sections/_gallery-section.scss */
+.hvr-icon-hang:before {
+  font-family: FontAwesome;
+  content: "\f0d7";
+  position: absolute;
+  top: 100%;
+  left: 55px;
+  color: #02baab;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  font-size: 15px;
+}
+
+/* line 119, ../sass/sections/_gallery-section.scss */
+.hvr-icon-hang:hover:before, .hvr-icon-hang:focus:before, .hvr-icon-hang:active:before {
+  -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+  animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/* line 1, ../sass/sections/_portfolio.scss */
+.portfolio {
+  padding: 50px 0 100px 0;
 }
 
 /* line 1, ../sass/sections/_icons.scss */
@@ -1477,6 +1632,36 @@ html a:hover, body a:hover {
   top: 0;
 }
 /* line 87, ../sass/sections/_icons.scss */
+.icon-wishlist:before {
+  content: '';
+  background: url("../../img/wishlist.png") no-repeat center center;
+  display: block;
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 91, ../sass/sections/_icons.scss */
+.icon-logout:before {
+  content: '';
+  background: url("../../img/logout.png") no-repeat center center;
+  display: block;
+  width: 12px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 95, ../sass/sections/_icons.scss */
+.icon-basket:after {
+  content: '\f291';
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #ffae00;
+  margin-left: 5px;
+}
+/* line 103, ../sass/sections/_icons.scss */
 .icon-address:before {
   content: '';
   background: url("../../img/address.png") no-repeat center center;
@@ -1487,7 +1672,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 91, ../sass/sections/_icons.scss */
+/* line 107, ../sass/sections/_icons.scss */
 .icon-phone:before {
   content: '';
   background: url("../../img/phone.png") no-repeat center center;
@@ -1498,7 +1683,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 95, ../sass/sections/_icons.scss */
+/* line 111, ../sass/sections/_icons.scss */
 .icon-email:before {
   content: '';
   background: url("../../img/email.png") no-repeat center center;
@@ -1509,7 +1694,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 99, ../sass/sections/_icons.scss */
+/* line 115, ../sass/sections/_icons.scss */
 .icon-tweet:before {
   content: '';
   background: url("../../img/tweet.png") no-repeat center center;
@@ -1520,11 +1705,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 103, ../sass/sections/_icons.scss */
+/* line 119, ../sass/sections/_icons.scss */
 .icon-facebook {
   position: relative;
 }
-/* line 106, ../sass/sections/_icons.scss */
+/* line 122, ../sass/sections/_icons.scss */
 .icon-facebook:before {
   content: '';
   background: url("../../img/facebook.png") no-repeat center center;
@@ -1535,11 +1720,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 111, ../sass/sections/_icons.scss */
+/* line 127, ../sass/sections/_icons.scss */
 .icon-twitter {
   position: relative;
 }
-/* line 114, ../sass/sections/_icons.scss */
+/* line 130, ../sass/sections/_icons.scss */
 .icon-twitter:before {
   content: '';
   background: url("../../img/twitter.png") no-repeat center center;
@@ -1550,11 +1735,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 119, ../sass/sections/_icons.scss */
+/* line 135, ../sass/sections/_icons.scss */
 .icon-youtube {
   position: relative;
 }
-/* line 122, ../sass/sections/_icons.scss */
+/* line 138, ../sass/sections/_icons.scss */
 .icon-youtube:before {
   content: '';
   background: url("../../img/youtube.png") no-repeat center center;
@@ -1565,11 +1750,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 127, ../sass/sections/_icons.scss */
+/* line 143, ../sass/sections/_icons.scss */
 .icon-instagram {
   position: relative;
 }
-/* line 130, ../sass/sections/_icons.scss */
+/* line 146, ../sass/sections/_icons.scss */
 .icon-instagram:before {
   content: '';
   background: url("../../img/instagram.png") no-repeat center center;
@@ -1580,11 +1765,11 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 135, ../sass/sections/_icons.scss */
+/* line 151, ../sass/sections/_icons.scss */
 .icon-pinterest {
   position: relative;
 }
-/* line 138, ../sass/sections/_icons.scss */
+/* line 154, ../sass/sections/_icons.scss */
 .icon-pinterest:before {
   content: '';
   background: url("../../img/pinterest.png") no-repeat center center;
@@ -1595,7 +1780,7 @@ html a:hover, body a:hover {
   left: 0;
   top: 0;
 }
-/* line 143, ../sass/sections/_icons.scss */
+/* line 159, ../sass/sections/_icons.scss */
 .icon-user:before {
   font-family: 'FontAwesome';
   content: "\f007";
@@ -1605,7 +1790,7 @@ html a:hover, body a:hover {
   border-radius: 50%;
   padding: 4px 6px;
 }
-/* line 153, ../sass/sections/_icons.scss */
+/* line 169, ../sass/sections/_icons.scss */
 .icon-time:before {
   font-family: 'FontAwesome';
   content: "\f017";
@@ -1615,7 +1800,7 @@ html a:hover, body a:hover {
   border-radius: 50%;
   padding: 4px 5px;
 }
-/* line 163, ../sass/sections/_icons.scss */
+/* line 179, ../sass/sections/_icons.scss */
 .icon-comments:before {
   font-family: 'FontAwesome';
   content: "\f10d";

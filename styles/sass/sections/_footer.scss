@@ -158,13 +158,14 @@
 
 .hvr-icon-up:before {
     font-size: 12px;
-    content: "\f106";
+    content: "\f077";
     position: absolute;
     right: 10px;
     padding: 0 1px;
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    color: $color-secondary;
   }
 
 .hvr-icon-up:hover:before, .hvr-icon-up:focus:before, .hvr-icon-up:active:before {
@@ -174,6 +175,7 @@
     animation-duration: 0.75s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+    color: $color-white;
   }
 
 

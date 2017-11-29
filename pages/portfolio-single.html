@@ -97,7 +97,14 @@
               </li>
             </ul>
 
-            <span class="title-blog-info">Home / Shortcodes / Typography / Blog</span>
+            <nav aria-label="breadcrumb" role="navigation" class="d-flex align-items-center">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Shortcodes</a></li>
+                <li class="breadcrumb-item"><a href="#">Typography</a></li>                
+                <li class="breadcrumb-item"><a href="#">Blog</a></li>
+              </ol>
+            </nav>
 
           </div>
         </div>
@@ -108,35 +115,55 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-9 carousel" id="controls">
-              <figure>
-                <img src="../img/cat.jpg" alt="portfolio" style="width: 690px; height: 900px;">
-              </figure>
+            <figure class="portfolio-figure">
+              <img src="../img/portfolio.jpg" alt="portfolio" class="portfolio-img">
+
+              <div class="buttons">
+                <button type="button" class="btn btn-gallery controls controls-prev">
+                  <span class="sr-only">Previous</span>
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-gallery controls controls-next">
+                  <span class="sr-only">Next</span>
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </figure>
           </div>
 
           <div class="col-12 col-md-3">
-            <div>
-              
+            <div class="d-flex mb-5 buttons">
+              <button type="button" class="btn btn-gallery">
+                <span class="sr-only">Previous</span>
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button type="button" class="btn btn-gallery">
+                <span class="sr-only">Next</span>
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button>
             </div>
-            <i class="fa fa-heart" aria-hidden="true"></i>
-            <span>257</span>
-            <article>
-              <h3>Art Direction, Web Design</h3>
+            <p class="mb-4">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                257
+            </p>
+            <article class="portfolio-article">
+              <h3 class="portfolio-article-title">Art Direction, Web Design</h3>
               <p>Gingerbread candy chupa chups topping. Halvah cake croissant jelly beans. Unerdwear.com brownie lollipop sesame snaps bear claw sweet roll sweet I love soufflé.</p>
               <p>Caramels powder gummies pudding danish sesame snaps. Sweet roll caramels fruitcake bonbon unerdwear.</p>
             </article>
-            <article>
-              <h4>Work description</h4>
-              <ul>
-                <li>
+            <article class="description">
+              <h4 class="description-title">Work description</h4>
+              <ul class="description-list">
+                <li class="description-list-item">
                   <p>Brownie ice cream carrot</p>
                 </li>
-                <li>
+                <li class="description-list-item">
                   <p>Carrot cake apple pie</p>
                 </li>
-                <li>
+                <li class="description-list-item">
                   <p>Love applicake I love</p>
                 </li>
-                <li>
+                <li class="description-list-item">
                   <p>Chocolate bar pudding</p>
                 </li>
               </ul>

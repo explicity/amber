@@ -1,3 +1,142 @@
 .portfolio {
 	padding: 50px 0 100px 0;
+	color: $color-dark;
+	font-size: 14px;
+
+	&-img {
+		width: 690px; 
+		height: 900px;
+
+		@media (max-width: 1023px) {
+			width: 100%;
+			height: auto;
+			margin-bottom: 15px;
+		}
+	}
+
+	&-figure {
+		position: relative;
+	}
+	
+	.buttons {
+
+		.btn {
+			border-radius: 0;
+			padding: 7px 13px;
+			border: 2px solid #f5f5f6;
+			transition: .2s;
+
+			&-gallery {
+				background-color: transparent;
+				color: $color-home;
+
+				&:hover {
+					border: 2px solid $color-home;
+					background-color: transparent;
+					color: $color-home;
+				}
+
+			}
+		}
+
+		@media (max-width: 765px) {
+			justify-content: center;
+		}
+
+		.controls {
+			background-color: $color-white;
+			border-color: $color-white;
+			color: $color-home;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+
+			&-prev {
+				left: 20px;
+			}
+
+			&-next {
+				right: 20px;
+			}
+
+			&:hover {
+				background-color: $color-home;
+				color: $color-white;
+				border-color: $color-home;
+			}
+		}
+	}
+
+	.btn {
+
+		&-primary {
+			color: $color-home;
+			border-color: $color-home;
+
+			&:hover {
+				color: $color-white;
+				background-color: $color-home;
+				border-color: $color-home;
+			}
+		}
+
+		&-lg {
+			width: 120px;
+			border-width: 3px;
+		}
+	}
+
+	.fa-heart {
+		color: #c3c3c3;
+	}
+
+	&-article {
+
+		&-title {
+			color: #ffc600;
+			margin-bottom: 20px;
+		}
+
+		p {
+			line-height: 24px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.description {
+	font-size: 14px;
+	margin-bottom: 30px;
+
+
+	&-title {
+		line-height: 24px;
+		font-weight: $font-bold;
+		margin-bottom: 7px;
+	}
+
+	&-list {
+
+		&-item {
+		
+			p {
+				line-height: 30px;
+				padding-left: 20px;
+
+				&:before {
+					content: '\f046';
+					font-family: FontAwesome;
+					display: inline-block;
+					margin-left: -20px;
+					margin-right: 10px;
+					color: $color-home;
+				}
+			}
+		}
+	}
 }

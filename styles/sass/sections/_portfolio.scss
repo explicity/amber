@@ -28,12 +28,12 @@
 
 			&-gallery {
 				background-color: transparent;
-				color: $color-home;
+				color: $color-portfolio-secondary;
 
 				&:hover {
-					border: 2px solid $color-home;
+					border: 2px solid $color-portfolio-secondary;
 					background-color: transparent;
-					color: $color-home;
+					color: $color-portfolio-secondary;
 				}
 
 			}
@@ -46,7 +46,7 @@
 		.controls {
 			background-color: $color-white;
 			border-color: $color-white;
-			color: $color-home;
+			color: $color-portfolio-secondary;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
@@ -65,9 +65,9 @@
 			}
 
 			&:hover {
-				background-color: $color-home;
+				background-color: $color-portfolio-secondary;
 				color: $color-white;
-				border-color: $color-home;
+				border-color: $color-portfolio-secondary;
 			}
 		}
 	}
@@ -75,13 +75,13 @@
 	.btn {
 
 		&-primary {
-			color: $color-home;
-			border-color: $color-home;
+			color: $color-portfolio-secondary;
+			border-color: $color-portfolio-secondary;
 
 			&:hover {
 				color: $color-white;
-				background-color: $color-home;
-				border-color: $color-home;
+				background-color: $color-portfolio-secondary;
+				border-color: $color-portfolio-secondary;
 			}
 		}
 
@@ -98,7 +98,7 @@
 	&-article {
 
 		&-title {
-			color: #ffc600;
+			color: $color-portfolio;
 			margin-bottom: 20px;
 		}
 
@@ -134,7 +134,7 @@
 					display: inline-block;
 					margin-left: -20px;
 					margin-right: 10px;
-					color: $color-home;
+					color: $color-portfolio-secondary;
 				}
 			}
 		}

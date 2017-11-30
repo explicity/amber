@@ -12,6 +12,7 @@
 
 		li {
 			margin-right: 15px;
+      display: inline;
 
 			&.active {
 
@@ -25,6 +26,7 @@
 	}
 
 	&-link {
+    display: inline;
 		color: $color-secondary;
 		font-size: 14px;
 		transition: .2s;

@@ -1633,48 +1633,31 @@ html a:hover, body a:hover {
   color: #3b4954;
   font-size: 14px;
 }
-/* line 6, ../sass/sections/_portfolio.scss */
-.portfolio-img {
-  width: 690px;
-  height: 900px;
-}
-@media (max-width: 1023px) {
-  /* line 6, ../sass/sections/_portfolio.scss */
-  .portfolio-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-  }
-}
-/* line 17, ../sass/sections/_portfolio.scss */
-.portfolio-figure {
-  position: relative;
-}
-/* line 23, ../sass/sections/_portfolio.scss */
+/* line 8, ../sass/sections/_portfolio.scss */
 .portfolio .buttons .btn {
   border-radius: 0;
   padding: 7px 13px;
   border: 2px solid #f5f5f6;
   transition: .2s;
 }
-/* line 29, ../sass/sections/_portfolio.scss */
+/* line 14, ../sass/sections/_portfolio.scss */
 .portfolio .buttons .btn-gallery {
   background-color: transparent;
   color: #ffae00;
 }
-/* line 33, ../sass/sections/_portfolio.scss */
+/* line 18, ../sass/sections/_portfolio.scss */
 .portfolio .buttons .btn-gallery:hover {
   border: 2px solid #ffae00;
   background-color: transparent;
   color: #ffae00;
 }
 @media (max-width: 765px) {
-  /* line 21, ../sass/sections/_portfolio.scss */
+  /* line 6, ../sass/sections/_portfolio.scss */
   .portfolio .buttons {
     justify-content: center;
   }
 }
-/* line 46, ../sass/sections/_portfolio.scss */
+/* line 31, ../sass/sections/_portfolio.scss */
 .portfolio .buttons .controls {
   background-color: #fff;
   border-color: #fff;
@@ -1688,68 +1671,68 @@ html a:hover, body a:hover {
   width: 40px;
   height: 40px;
 }
-/* line 59, ../sass/sections/_portfolio.scss */
+/* line 44, ../sass/sections/_portfolio.scss */
 .portfolio .buttons .controls-prev {
   left: 20px;
 }
-/* line 63, ../sass/sections/_portfolio.scss */
+/* line 48, ../sass/sections/_portfolio.scss */
 .portfolio .buttons .controls-next {
   right: 20px;
 }
-/* line 67, ../sass/sections/_portfolio.scss */
+/* line 52, ../sass/sections/_portfolio.scss */
 .portfolio .buttons .controls:hover {
   background-color: #ffae00;
   color: #fff;
   border-color: #ffae00;
 }
-/* line 77, ../sass/sections/_portfolio.scss */
+/* line 62, ../sass/sections/_portfolio.scss */
 .portfolio .btn-primary {
   color: #ffae00;
   border-color: #ffae00;
 }
-/* line 81, ../sass/sections/_portfolio.scss */
+/* line 66, ../sass/sections/_portfolio.scss */
 .portfolio .btn-primary:hover {
   color: #fff;
   background-color: #ffae00;
   border-color: #ffae00;
 }
-/* line 88, ../sass/sections/_portfolio.scss */
+/* line 73, ../sass/sections/_portfolio.scss */
 .portfolio .btn-lg {
   width: 120px;
   border-width: 3px;
 }
-/* line 94, ../sass/sections/_portfolio.scss */
+/* line 79, ../sass/sections/_portfolio.scss */
 .portfolio .fa-heart {
   color: #c3c3c3;
 }
-/* line 100, ../sass/sections/_portfolio.scss */
+/* line 85, ../sass/sections/_portfolio.scss */
 .portfolio-article-title {
   color: #ffc600;
   margin-bottom: 20px;
 }
-/* line 105, ../sass/sections/_portfolio.scss */
+/* line 90, ../sass/sections/_portfolio.scss */
 .portfolio-article p {
   line-height: 24px;
   margin-bottom: 15px;
 }
 
-/* line 112, ../sass/sections/_portfolio.scss */
+/* line 97, ../sass/sections/_portfolio.scss */
 .description {
   font-size: 14px;
   margin-bottom: 30px;
 }
-/* line 117, ../sass/sections/_portfolio.scss */
+/* line 102, ../sass/sections/_portfolio.scss */
 .description-title {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 7px;
 }
-/* line 127, ../sass/sections/_portfolio.scss */
+/* line 112, ../sass/sections/_portfolio.scss */
 .description-list-item p {
   line-height: 30px;
   padding-left: 20px;
 }
-/* line 131, ../sass/sections/_portfolio.scss */
+/* line 116, ../sass/sections/_portfolio.scss */
 .description-list-item p:before {
   content: '\f046';
   font-family: FontAwesome;
